@@ -1,0 +1,213 @@
+   <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Post a job position or create your online resume by TheJobs!">
+    <meta name="keywords" content="">
+    <title>TheJobs</title>
+    <link href="css/app.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="img/favicon.ico">
+  </head>
+  <body class="nav-on-header smart-nav">
+    <!-- Navigation bar -->
+       <nav class="navbar">
+      <div class="container">
+        <!-- Logo -->
+        <div class="pull-left">
+          <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="ti-menu"></i></a>
+
+          <div class="logo-wrapper">
+            <a class="logo" href=""><img src="img/logo.png" alt="logo"></a>
+            <a class="logo-alt" href=""><img src="img/logo-alt.png" alt="logo-alt"></a>
+          </div>
+        </div>
+        <!-- END Logo -->
+        <!-- User account -->
+         <div class="pull-right user-login">
+           <a class="btn btn-sm btn-primary" href="admin_panel">HR</a> 
+           {# or <a href="reg">register</a> #}
+          <img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
+        </div> 
+        <!-- END User account -->
+         <!-- Navigation menu -->
+        <ul class="nav-menu">
+          <li>
+            <a class="active" href="/">Home</a>
+          </li>
+          <li>
+            <a href="#">Компания</a>
+            <ul>
+              <li><a href="company-list">Обзор компаний</a></li>
+              <li><a href="company-detail">Информация о компании</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Страницы</a>
+            <ul>
+              <li><a href="page-about">О нас </a></li>
+              <li><a href="page-contact">Контакты</a></li>
+              <li><a href="page-faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- END Navigation menu -->
+      </div>
+    </nav>
+    <!-- END Navigation bar -->
+   <!-- Site header -->
+    <header class="page-header bg-img size-lg" style="background-image: url(img/bg-banner2.jpg)">
+      <div class="container no-shadow">
+        <h1 class="text-center">Свяжитесь с нами</h1>
+        <p class="lead text-center">Поздоровайтесь, напишите письмо и подпишитесь на нас в социальных сетях.</p>
+      </div>
+    </header>
+    <!-- END Site header -->
+    <!-- Main container -->
+    <main>
+
+      <section>
+        <div class="container">
+          <div id="contact-map" style="height: 900px">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.1578151664953!2d52.478337877145904!3d55.73838689310101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e01eb1f9465df1%3A0x976332ee15f6ab27!2z0KLQtdGF0L3QuNGH0LXRgdC60LjQuSDQutC-0LvQu9C10LTQtiDQuNC8LiDQki7QlC4g0J_QvtGC0LDRiNC-0LLQsA!5e0!3m2!1sru!2sru!4v1687003466959!5m2!1sru!2sru" width="900" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <br><br>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+              <h4>Форма обратной связи</h4>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control input-lg" placeholder="Name">
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control input-lg" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+              <h4>Информация</h4>
+              <div class="highlighted-block">
+                <dl class="icon-holder">
+                  <dt><i class="fa fa-map-marker"></i></dt>
+                  <dd>3652 Seventh Avenue, Los Angeles, CA</dd>
+
+                  <dt><i class="fa fa-phone"></i></dt>
+                  <dd>(+1) 987 654 3210</dd>
+
+                  <dt><i class="fa fa-fax"></i></dt>
+                  <dd>(+1) 123 456 7890</dd>
+
+                  <dt><i class="fa fa-envelope"></i></dt>
+                  <dd>hi@yoursite.com</dd>
+                </dl>
+              </div>
+
+              <br>
+
+              <ul class="social-icons size-sm text-center">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+    </main>
+    <!-- END Main container -->
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+
+      <!-- Top section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">An employment website is a web site that deals specifically with employment or careers. Many employment websites are designed to allow employers to post job requirements for a position to be filled and are commonly known as job boards. Other employment sites offer employer reviews, career and job-search advice, and describe different job descriptions or employers. Through a job website a prospective employee can locate and fill out a job application.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Company</h6>
+            <ul class="footer-links">
+              <li><a href="page-about.html">About us</a></li>
+              <li><a href="page-typography.html">How it works</a></li>
+              <li><a href="page-faq.html">Help center</a></li>
+              <li><a href="page-typography.html">Privacy policy</a></li>
+              <li><a href="page-contact.html">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Trendeing jobs</h6>
+            <ul class="footer-links">
+              <li><a href="job-list.html">Front-end developer</a></li>
+              <li><a href="job-list.html">Android developer</a></li>
+              <li><a href="job-list.html">iOS developer</a></li>
+              <li><a href="job-list.html">Full stack developer</a></li>
+              <li><a href="job-list.html">Project administrator</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+      <!-- END Top section -->
+
+      <!-- Bottom section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyrights &copy; 2016 All Rights Reserved by <a href="http://themeforest.net/user/shamsoft">ShaMSofT</a>.</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END Bottom section -->
+
+    </footer>
+    <!-- END Site footer -->
+
+
+    <!-- Back to top button -->
+    <a id="scroll-up" href="#"><i class="ti-angle-up"></i></a>
+    <!-- END Back to top button -->
+
+    <!-- Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+  </body>
+</html>

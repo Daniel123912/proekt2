@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/app.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/forma.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+    <title>Document</title>
+</head>
+<body>
+       <nav class="navbar">
+      <div class="container">
+        <!-- Logo -->
+        <div class="pull-left">
+          <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="ti-menu"></i></a>
+
+          <div class="logo-wrapper">
+            <a class="logo" href=""><img src="img/logo.png" alt="logo"></a>
+            <a class="logo-alt" href=""><img src="img/logo-alt.png" alt="logo-alt"></a>
+          </div>
+        </div>
+        <!-- END Logo -->
+        <!-- User account -->
+         <div class="pull-right user-login">
+           <a class="btn btn-sm btn-primary" href="admin_panel">HR</a> 
+           {# or <a href="reg">register</a> #}
+          <img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
+        </div> 
+        <!-- END User account -->
+         <!-- Navigation menu -->
+        <ul class="nav-menu">
+          <li>
+            <a class="active" href="/">Home</a>
+          </li>
+          <li>
+            <a href="#">Компания</a>
+            <ul>
+              <li><a href="company-list">Обзор компаний</a></li>
+              <li><a href="company-detail">Информация о компании</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Страницы</a>
+            <ul>
+              <li><a href="page-about">О нас </a></li>
+              <li><a href="page-contact">Контакты</a></li>
+              <li><a href="page-faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- END Navigation menu -->
+      </div>
+    </nav>
+<form method="post" action="/reg">
+  <label for="surname">Фамилия:</label>
+  <input type="text" name="surname">
+  <label for="name">Имя:</label>
+  <input type="text" id="name" name="name" required>
+  <label for="patronymic">Отчество:</label>
+  <input type="text" id="patronymic" name="patronymic">
+  <label for="job">Интересующая вакансия:</label>
+  <select id="job" name="job" required>
+    <option value="">Выберите вакансию</option>
+    <option value="Senior front-end developer">Senior front-end developer</option>
+    <option value="Software Engineer (Entry or Senior)">Software Engineer (Entry or Senior)</option>
+    <option value="Full Stack Web Developer">Full Stack Web Developer</option>
+  </select>
+  <label for="country">Странна</label>
+  <select id="country" name="country" required>
+    <option value="">Выберите странну</option>
+    <option value="position1">Россия</option>
+    <option value="position2">Беларусь </option>
+    <option value="position3">Казахстан</option>
+    <option value="position3">Другое...</option>
+  </select>
+  <fieldset>
+    <legend>Блок идентификации:</legend>
+    <label for="inn">Индивидуальный номер налогоплательщика:</label>
+    <input type="text" id="inn" name="inn">
+    <label>
+    <input type="checkbox" name="no_inn" id="no_inn" value="1" onchange="togglePassportBlock()">Не имею ИНН
+    </label>
+    <div id="passport_block" style="display: none;">
+      <label for="passport">Серия и номер паспорта:</label>
+      <input type="text" id="passport" name="passport">
+    </div>
+  </fieldset>
+  <label for="phone_number">Номер телефона*</label>
+  <input type="tel" id="phone_number" name="phone_number" required>
+  <label for="email">Электронная почта*</label>
+  <input type="email" id="email" name="email" required>
+  <label for="telegram">Telegram</label>
+  <input type="text" id="telegram" name="telegram">
+ <input type="checkbox" name="" id="" ><a href="">Согласия на обработку данных</a>
+  <button>Отправить</button>
+</form>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show-menu');
+});
+var innInput = document.getElementById("inn");
+  var passportBlock = document.getElementById("passport_block","inn");
+  var noInnCheckbox = document.getElementById("no_inn");
+  noInnCheckbox.addEventListener("change", function() {
+    if (this.checked) {
+      innInput.style.display = "none";
+      passportBlock.style.display = "block";
+    } else {
+      innInput.style.display = "block";
+      passportBlock.style.display = "none";
+    }
+  });
+</script>
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+</body>
+</html>
+
+
+
+

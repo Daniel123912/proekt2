@@ -1,0 +1,11 @@
+body {
+    top: 0 !important;
+  }
+  .skiptranslate {
+    display: none;
+    height: 0;
+  }
+  .language__img {
+    cursor: pointer;
+  }
+  
